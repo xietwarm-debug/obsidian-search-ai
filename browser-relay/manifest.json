@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Obsidian Relay",
+  "version": "1.0.1",
+  "description": "Send selected text, images, links, and page clips from Chrome to the Obsidian relay station.",
+  "permissions": ["activeTab", "alarms", "contextMenus", "storage", "tabs"],
+  "host_permissions": ["http://localhost:51234/*", "http://127.0.0.1:51234/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Obsidian Relay"
+  },
+  "icons": {
+    "16": "icons/icon.svg",
+    "48": "icons/icon.svg",
+    "128": "icons/icon.svg"
+  }
+}

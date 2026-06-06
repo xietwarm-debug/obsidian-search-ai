@@ -1,0 +1,8 @@
+{
+  "name": "obsidian-search-ai",
+  "version": "3.1.0",
+  "description": "AI-powered search, summary, translate, rewrite, and more for Obsidian",
+  "main": "main.js",
+  "scripts": { "dev": "node esbuild.config.mjs", "build": "node esbuild.config.mjs production" },
+  "devDependencies": { "esbuild": "^0.17.0", "obsidian": "latest", "typescript": "^5.0.0" }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "search-ai-selection",
+  "name": "Search & AI Selection",
+  "version": "3.1.0",
+  "minAppVersion": "1.0.0",
+  "description": "Select text to search, AI summary, translate, rewrite, code explain, table extract, and more",
+  "author": "OpenClaw",
+  "isDesktopOnly": false
+}
